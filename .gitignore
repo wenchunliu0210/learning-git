@@ -1,3 +1,5 @@
 sensitive-content.js
 .vscode/
 bomb-file.js
+node_modules/
+private-content.js
