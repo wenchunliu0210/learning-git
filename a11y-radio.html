@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Imitate a radio baverage menu list with web accessibility support!">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Imitate A Radio List with Web Accessibility Support" />
+  <meta property="og:description" content="Imitate a radio baverage menu list with web accessibility support!" />
+  <meta property="og:site_name" content="Git Learning" />
+  <meta property="og:image" content="./img/a11y-radio.png" />
+  <meta name="twitter:card" content="website" />
+  <meta name="twitter:title" content="Imitate A Radio List with Web Accessibility Support" />
+  <meta name="twitter:description" content="Imitate a radio baverage menu list with web accessibility support!" />
+  <meta name="twitter:image" content="./img/a11y-radio.png" />
+  <link rel="stylesheet" href="./a11y-style.css">
+  <title>Imitate A Radio List with Web Accessibility Support</title>
+</head>
+<body>
+  <h1>Baverage Menu</h1>
+  <div id="radio-wrapper" class="radio-wrapper">
+    <ul id="radio-group" class="radio-group">
+      <li tabindex="0" class="radio" checked>Water</li>
+      <li tabindex="-1" class="radio">Coffee</li>
+      <li tabindex="-1" class="radio">Tea</li>
+      <li tabindex="-1" class="radio">Orange Juice</li>
+      <li tabindex="-1" class="radio">Milk</li>
+    </ul>
+    <div class="final-pick">
+      Final Pick: <span id="final"></span>
+    </div>
+  </div>
+
+
+  <script src="./radio-handler.js"></script>
+</body>
+</html>
