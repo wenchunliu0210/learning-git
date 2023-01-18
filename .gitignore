@@ -3,3 +3,5 @@ sensitive-content.js
 bomb-file.js
 node_modules/
 private-content.js
+arrayMethods/dist/
+*.dev.js
