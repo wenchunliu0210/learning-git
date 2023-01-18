@@ -1,30 +1,32 @@
-/********************* Array.every() *********************/
+/*********************
+ * Array.every()
+ *********************/
 const familyMembers = [
   {
     name: 'Tom',
     role: 'father',
-    age: 50,
+    age: 50
   },
   {
     name: 'Tina',
     role: 'mother',
-    age: 48,
+    age: 48
   },
   {
     name: 'Jack',
     role: 'the eldest son',
-    age: 23,
+    age: 23
   },
   {
     name: 'John',
     role: 'second son',
-    age: 20,
+    age: 20
   },
   {
     name: 'June',
     role: 'the youngest daughter',
-    age: 17,
-  },
+    age: 17
+  }
 ]
 
 const isAdult = (person) => person.age >= 18

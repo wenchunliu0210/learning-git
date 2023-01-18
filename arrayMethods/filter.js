@@ -1,4 +1,6 @@
-/********************* Array.filter() *********************/
+/*********************
+ * Array.filter()
+ *********************/
 const checkLength = (arr, limit = Infinity) => {
   const notExceedLimit = (item) => item.length <= limit
   return arr.filter(notExceedLimit)
@@ -16,22 +18,22 @@ const modifiedWords = words.filter((word, index, arr) => {
 console.log(words) // ['spray']
 console.log(modifiedWords) // ['spray', 'limit extra', 'exuberant extra', 'destruction extra', 'elite extra', 'present extra', 'undefined extra']
 
-function lengthChecker() {
+function LengthChecker () {
   this.arr = []
   this.limit = Infinity
 }
-lengthChecker.prototype.setTargetArray = function (targetArr) {
+LengthChecker.prototype.setTargetArray = function (targetArr) {
   this.arr = targetArr
 }
-lengthChecker.prototype.setLimit = function (limitLength) {
+LengthChecker.prototype.setLimit = function (limitLength) {
   this.limit = limitLength
 }
-lengthChecker.prototype.passLengthCheck = function () {
+LengthChecker.prototype.passLengthCheck = function () {
   const notExceedLimit = (item) => item.length <= this.limit
   return this.arr.filter(notExceedLimit)
 }
 
-const check = new lengthChecker()
+const check = new LengthChecker()
 check.setTargetArray(fruits)
 check.setLimit(5)
 console.log(check.passLengthCheck()) // ['apple', 'guava']

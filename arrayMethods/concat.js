@@ -1,4 +1,7 @@
-/********************* Array.concat() *********************/
+/*********************
+ * Array.concat()
+ *********************/
+
 const arrNum1 = [1, 2, 3]
 const arrNum2 = [4, 5, 6]
 const arrNum3 = arrNum1.concat(arrNum2)

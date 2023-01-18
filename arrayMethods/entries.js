@@ -1,4 +1,6 @@
-/********************* Array.entries() *********************/
+/*********************
+ * Array.entries()
+ *********************/
 const names = ['John', 'Doe', 'Peeping', 'Tom']
 const iterator = names.entries()
 console.log(iterator.next().value) // [0, 'John']
